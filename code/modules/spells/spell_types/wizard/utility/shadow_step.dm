@@ -9,7 +9,7 @@
 	range = 3
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
-	sound = 'sound/misc/stings/generic.ogg'
+	sound = 'sound/misc/area.ogg'
 	associated_skill = /datum/skill/misc/sneaking
 	attunements = list(
 		/datum/attunement/dark = 0.4

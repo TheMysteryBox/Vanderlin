@@ -114,6 +114,7 @@
 	has_gravity = STANDARD_GRAVITY
 	noteleport = TRUE
 	flags_1 = NONE
+	ambientsounds = HIGHSEC
 
 /area/syndicate_mothership/control
 	name = "Syndicate Control Room"

@@ -146,11 +146,16 @@
 	ADD_TRAIT(owner, TRAIT_KNOCKEDOUT, TRAIT_STATUS_EFFECT(id))
 
 	owner.cmode = FALSE
+	SSdroning.kill_droning(owner.client)
+	SSdroning.kill_loop(owner.client)
+	SSdroning.kill_rain(owner.client)
 	owner.set_typing_indicator(FALSE)
 
 /datum/status_effect/incapacitating/sleeping/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_KNOCKEDOUT, TRAIT_STATUS_EFFECT(id))
-	owner.refresh_looping_ambience()
+	var/area/this_area = get_area(owner)
+	SSdroning.play_area_sound(this_area, owner.client)
+	SSdroning.play_loop(this_area, owner.client)
 
 	if(ishuman(owner) && sleptonground)
 		var/mob/living/carbon/human/human_owner = owner
