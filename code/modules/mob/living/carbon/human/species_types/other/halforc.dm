@@ -162,7 +162,7 @@
 	return null
 
 /datum/species/halforc/get_accent_list()
-	return strings("accents/halforc_replacement.json", "halforc")
+	return strings("accents/middlespeak.json", "full")
 
 /datum/species/halforc/get_native_language()
 	return "Orcish"
