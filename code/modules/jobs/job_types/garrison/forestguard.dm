@@ -52,7 +52,7 @@
 // Axes Maces and Swords
 /datum/advclass/forestguard/infantry
 	name = "Forest Infantry"
-	tutorial = "In the goblin wars you were deployed to the front lines, you caved in thier skulls and chopped thier legs off."
+	tutorial = "In the goblin wars you were deployed to the front lines, you caved in their skulls and chopped their legs off."
 	outfit = /datum/outfit/job/forestguard/infantry
 	category_tags = list(CTAG_FORGARRISON)
 
